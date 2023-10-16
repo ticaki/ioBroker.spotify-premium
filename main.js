@@ -158,7 +158,7 @@ function main() {
     }
     if (isEmpty(application.statusPollingDelaySeconds)) {
         application.statusPollingDelaySeconds = 5;
-    } else if (application.statusPollingDelaySeconds < 1 && application.statusPollingDelaySeconds) {
+    } else if (application.statusPollingDelaySeconds < 1 && application.statusPollingDelaySeconds != 0) {
         application.statusPollingDelaySeconds = 1;
     }
     if (isEmpty(deviceInterval)) {
